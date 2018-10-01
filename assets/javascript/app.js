@@ -15,7 +15,7 @@ $(function () {
 
     function displayAnimalInfo() {
         var animalClicked = $(this).attr("data-name");
-        var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + animalClicked + "&api_key=" + apiKey + "&limit=15";
+        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + animalClicked + "&api_key=" + apiKey + "&limit=15";
 
         // Creates AJAX call for the specific animal button being clicked
         $.ajax({
